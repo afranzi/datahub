@@ -166,7 +166,7 @@ services:
       - EBEAN_DATASOURCE_USERNAME=${MYSQL_USER}
       - EBEAN_DATASOURCE_PASSWORD=${MYSQL_PASS}
       - EBEAN_DATASOURCE_HOST=${MYSQL_HOST}:3306
-      - EBEAN_DATASOURCE_URL=jdbc:mysql://{MYSQL_HOST}:3306/datahub?verifyServerCertificate=false&useSSL=true
+      - EBEAN_DATASOURCE_URL=jdbc:mysql://${MYSQL_HOST}:3306/datahub?verifyServerCertificate=false&useSSL=true
       - EBEAN_DATASOURCE_DRIVER=com.mysql.jdbc.Driver
       - KAFKA_BOOTSTRAP_SERVER=broker:29092
       - KAFKA_SCHEMAREGISTRY_URL=http://schema-registry:8081
